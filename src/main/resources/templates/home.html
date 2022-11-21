@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>Home Page</title></head>
+<body>
+	<h1>Hello !</h1>
+	<p>Welcome to <span th:text="${appName}">Our App</span></p>
+	<p th:text="${test}">Test 22332</span></p>
+	[[${test}]]-123--22
+	<input th:value="${test}" />
+</body>
+<script>
+	var aa =  "[[${test}]]"
+	console.log('===>1 ',aa)
+</script>
+</html>

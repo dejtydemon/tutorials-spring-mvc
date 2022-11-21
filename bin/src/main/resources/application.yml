@@ -1,0 +1,25 @@
+server:
+  port: ${port:8098}
+  error:
+   path: /error
+   whitelabel:
+    enabled: false
+spring:
+  application:
+   name: Bootstrap Spring Cloud
+  thymeleaf:
+    enabled: true
+    prefix: classpath:/templates/
+    cache: false
+    suffix: .html
+
+  resources:
+    static-locations: classpath:/templates/
+    cache-period: 0
+  profiles:
+    active: dev
+
+
+
+#spring.jpa.generate-ddl=true
+#spring.jpa.hibernate.ddl-auto=update
