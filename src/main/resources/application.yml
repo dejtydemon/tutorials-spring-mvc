@@ -14,7 +14,7 @@ spring:
     suffix: .html
 
   resources:
-    static-locations: classpath:/templates/
+    static-locations: classpath:/static/
     cache-period: 0
   profiles:
     active: dev
